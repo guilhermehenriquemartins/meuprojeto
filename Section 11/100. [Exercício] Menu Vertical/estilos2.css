@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+menu {
+  padding: 0;
+}
+
+menu ul {
+  padding: 0;
+  width: 250px;
+}
+
+menu a {
+  display: block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: black;
+  background: orange url('imgs/seta.png') no-repeat 0.5em center;
+}
+
+menu a:hover {
+  padding-left: 2.5em;
+  color: white;
+  background: darkorange url('imgs/seta.png') no-repeat 1.5em center;
+}
+
+menu a:active {
+  background-color: #a95e04;
+}
