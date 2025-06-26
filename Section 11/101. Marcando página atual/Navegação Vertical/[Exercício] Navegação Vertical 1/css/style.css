@@ -18,21 +18,24 @@ menu a {
   padding: 0.5em 1.5em;
   text-decoration: none;
   color: black;
-  background: orange url('imgs/seta.png') no-repeat 0.5em center;
+  background: orange url('../imgs/seta.png') no-repeat 0.5em center;
 }
 
 menu a:hover {
   padding-left: 2.5em;
   color: white;
-  background: darkorange url('imgs/seta.png') no-repeat 1.5em center;
-}
-
-#home {
-  padding-left: 2.5em;
-  color: white;
-  background: darkorange url('imgs/seta.png') no-repeat 1.5em center;
+  background: darkorange url('../imgs/seta.png') no-repeat 1.5em center;
 }
 
 menu a:active {
   background-color: #a95e04;
+}
+
+body#home a.home,
+body#produtos a.produtos,  
+body#carrinho a.carrinho,
+body#contato a.contato  {
+  padding-left: 2.5em;
+  color: white;
+  background: darkorange url('../imgs/seta.png') no-repeat 1.5em center;
 }

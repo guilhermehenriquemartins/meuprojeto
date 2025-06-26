@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+menu {
+  background-color: #181818;
+  padding: 0.5em 0;
+  width: 750px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+menu a {
+  color: white;
+  text-decoration: none;
+  float: left;
+  padding: 0.5em 2.5em;
+  margin: 0 0.5em;
+  border-radius: 100px;
+}
+
+menu a:hover {
+  background-color: #2b3864;
+}
+
+menu a:active {
+  background-color: gray;
+}
+
+#home li.home a,
+#produtos li.produtos a,
+#carrinho li.carrinho a,
+#contato li.contato a {
+  background: orange url("../imgs/seta.png") no-repeat 1.5em center;
+  padding-left: 2.5em;
+}

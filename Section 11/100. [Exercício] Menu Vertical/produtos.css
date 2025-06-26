@@ -21,13 +21,13 @@ menu a {
   background: orange url('imgs/seta.png') no-repeat 0.5em center;
 }
 
-menu a:hover {
+#produto {
   padding-left: 2.5em;
   color: white;
   background: darkorange url('imgs/seta.png') no-repeat 1.5em center;
 }
 
-#home {
+menu a:hover {
   padding-left: 2.5em;
   color: white;
   background: darkorange url('imgs/seta.png') no-repeat 1.5em center;
