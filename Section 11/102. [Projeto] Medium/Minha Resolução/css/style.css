@@ -6,27 +6,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'principal';
-  src: url('../fonts/GT-Super/GT-Super-Display-Light-Trial.otf');
-}
-
-@font-face {
-  font-family: 'titulo';
-  src: url('../fonts/GT-Super/GT-Super-Text-Medium-Trial.otf');
-}
-
-@font-face {
-  font-family: 'numero';
-  src: url('../fonts/GT-Super/GT-Super-Text-Bold-Trial.otf');
-}
-
-:root {
-  --fonteprincipal: 'principal';
-  --fontetitulo: 'titulo';
-  --fontenumeros: 'numero';
-}
-
 header {
   position: fixed;
   top: 0;
@@ -34,7 +13,6 @@ header {
   width: 100vw;
   background-color: #C5E3FE;
   padding: 1.7em 0;
-  font-family: var(--fontemenu);
   z-index: 1;
 }
 
