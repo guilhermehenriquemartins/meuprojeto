@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    .container {
+      width: 500px;
+      border: 2px dotted red;
+      display: flex;
+      flex-flow: column wrap;
+    }
+    .container > div {
+      border: 1px solid white;
+      color: white;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Display Flex</h1>
+  
+  <div class="container">
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <div>04</div>
+    <div>05</div>
+  </div>
+
+</body>
+</html>
