@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h2 {
+      background-color: orangered;
+      color: white;
+      padding: 5px 10px;
+      width: 200px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #container {
+      display: grid;
+      grid-template-columns: [inicio] 100px [meio] 100px [penultimo] 100px [fim];
+      grid-template-rows: [inicio] 100px [meio] 100px [penultimo] 100px [fim];
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+
+    #container > div {
+      background-color: white;
+      padding: 10px;
+    }
+
+    .item2 {
+      grid-column: meio / fim;
+    }
+
+    .item3 {
+      grid-column: inicio / penultimo;
+    }
+
+    .item4 {
+      grid-column: penultimo / fim;
+      grid-row: meio / fim;
+    }
+
+    .item7 {
+      grid-column: span 3;
+    }
+  </style>
+</head>
+<body>
+  
+  <h2>Grid</h2>
+
+  <div id="container">
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+    <div class="item5"></div>
+    <div class="item6"></div>
+    <div class="item7"></div>
+  </div>
+
+</body>
+</html>
