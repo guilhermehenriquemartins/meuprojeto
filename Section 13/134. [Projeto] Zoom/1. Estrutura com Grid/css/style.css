@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*-------------------- INÍCIO ESTRUTURA GRID --------------------*/
+
+#container {
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  'cabecalho cabecalho'
+  'principal1 slide1'
+  'opcoes principal2'
+  'rodape rodape'
+}
+
+header {grid-area: cabecalho}
+.item1 {grid-area: principal1}
+.item2 {grid-area: slide1}
+.item3 {grid-area: opcoes}
+.item4 {grid-area: principal2}
+footer {grid-area: rodape}
+
+/*-------------------- FIM ESTRUTURA GRID --------------------*/
+
+
+
+/*-------------------- INÍCIO CABEÇALHO --------------------*/
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+header > nav {
+  flex-grow: 1;
+  margin-left: 25px;
+}
+
+header > nav > ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+header > nav > ul > li a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #484848;
+}
+
+header div > a {
+  border: 2px solid #0B5CFF;
+  color: #0B5CFF;
+  padding: 0.4em 1.5em;
+  border-radius: 1.2em;
+  text-decoration: none;
+}
+
+header div > a:hover {
+  background-color: #cadcff;
+}
+
+.destaque {
+  background-color: #0B5CFF;
+  color: white;
+}
+
+.destaque:hover {
+  background-color: #3075ff;
+}
+
+.item2 > img, .item3 > img {
+  width: 100%;
+}
+
+/*-------------------- FIM CABEÇALHO --------------------*/
+
+
+.item1 > a, .item4 > a {
+  background-color: #0B5CFF;
+  color: white;
+  padding: 0.4em 1.5em;
+  text-decoration: none;
+  border-radius: 1.2em;
+}
+
+.item1 > a:hover, .item4 > a:hover {
+  background-color: #3075ff;
+}
+
+header, .item1, .item2, .item3, .item4, footer {
+  /*border: 1px dotted red;*/
+}
