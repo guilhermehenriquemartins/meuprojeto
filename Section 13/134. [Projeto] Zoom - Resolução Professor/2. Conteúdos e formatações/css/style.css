@@ -1,0 +1,143 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas: 
+  'cabecalho cabecalho'
+  'capa-conteudo capa-imagem'
+  'organizacao-imagem organizacao-conteudo'
+}
+
+header {grid-area: cabecalho}
+#capa-conteudo {grid-area: capa-conteudo}
+#capa-imagem {grid-area: capa-imagem}
+#organizacao-imagem {grid-area: organizacao-imagem}
+#organizacao-conteudo {grid-area: organizacao-conteudo}
+
+section img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+nav {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 10px;
+}
+
+ul a:link, a:visited {
+  padding: 10px;
+  text-decoration: none;
+  color: #484848;
+}
+
+ul a:hover {
+  color: #0B5CFF;
+}
+
+a.botao {
+  text-decoration: none;
+  color: #0B5CFF;
+  border: 2px solid #0B5CFF;
+  border-radius: 25px;
+  padding: 5px 20px;
+  align-self: flex-start; /* <-------- */
+}
+
+a.botao:hover {
+  background-color: #d2e1ff;
+}
+
+a.destaque {
+  background-color: #0B5CFF;
+  color: white;
+}
+
+a.destaque:hover {
+  background-color: #2d73ff;
+}
+
+/* Tipografia */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.texto-destaque {
+  color: #0B5CFF;
+}
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+#capa-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#organizacao-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    row-gap: 20px;
+    text-align: center;
+    grid-template-areas: 
+    'cabecalho'
+    'capa-conteudo'
+    'capa-imagem'
+    'organizacao-imagem'
+    'organizacao-conteudo'
+  }
+
+  a.botao {
+    align-self: center;
+  }
+}
