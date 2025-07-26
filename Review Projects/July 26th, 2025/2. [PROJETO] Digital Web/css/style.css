@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --fonteprincipal: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--fonteprincipal);
+}
+
+/*------------------------------ CABEÇALHO ------------------------------*/
+
+.container {
+  max-width: 1216px;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+ul {
+  flex-grow: 1;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul li a {
+  padding: 8px;
+  margin-left: 25px;
+  font-size: 1em;
+  color: black; 
+  text-decoration: none;
+}
+
+ul li a.destaque {
+  background-color: #1943ef;
+  color: white;
+  border-radius: 100px;
+  padding: 8px 20px;
+}
+
+
+/*------------------------------ SEÇÃO INÍCIO ------------------------------*/
+
+section#inicio {
+  padding: 140px 10px 200px 10px;
+  background: #FAFAFA url('../imgs/hero-background.svg') no-repeat bottom center / contain;
+}
+
+section#inicio .delimitador {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+section#inicio .delimitador h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+section#inicio .delimitador p {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 23px;
+}
+
+section#inicio .delimitador button {
+  background-color: #1943ef;
+  color: white;
+  font-weight: 600;
+  font-size: .9em;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 100px;
+}
+
+
+/*------------------------------ SEÇÃO APRENDIZADO ------------------------------*/
+
+section#aprendizado {
+  padding: 100px 10px;
+}
+
+section#aprendizado h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+section#aprendizado #pai {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 80px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.item h3 {
+  color: #363636;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-weight: 400;
+  color: #363636;
+  font-size: .9em;
+}
+
+
+/*------------------------------ SEÇÃO REGISTRAR ------------------------------*/
+
+section#registrar {
+  position: relative;
+  background-color: #1943ef;
+  padding: 70px 0;
+}
+
+section#registrar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#registrar h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+section#registrar form h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+section#registrar form input[type='text'] {
+  padding: 13px 15px;
+  border-radius: 100px;
+  border: none;
+  margin-right: 10px;
+}
+
+section#registrar form input[type='submit'] {
+  background-color: #FD9C29;
+  color: white;
+  font-weight: 600;
+  padding: 13px 20px;
+  border-radius: 100px;
+  border: none;
+}
+
+section#registrar img {
+  position: absolute;
+  bottom: -10%;
+  left: 7%;
+}
+
+
+/*------------------------------ SEÇÃO SOBRE ------------------------------*/
+
+section#sobre {
+  padding: 80px 0;
+}
+
+section#sobre img {
+  width: 600px;
+}
+
+section#sobre .container {
+  display: flex;
+  column-gap: 80px;
+}
+
+section#sobre #info h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+section#sobre #info h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #1943ef;
+  margin-bottom: 30px;
+}
+
+section#sobre #info p {
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #363636;
+}
+
+section#sobre #redes-sociais {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+section#sobre #redes-sociais img {
+  width: 20px;
+  height: 20px;
+}
+
+section#sobre #redes-sociais li {
+  background-color: #ECEEFB;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: left;
+}
+
+/*------------------------------ ÚLTIMA SEÇÃO ------------------------------*/
+
+section#ultimo {
+  background: #1943ef url('../imgs/full-background.svg') no-repeat center bottom / contain;
+  padding: 100px 0;
+}
+
+section#ultimo .container {
+  width: 70%;
+  text-align: center;
+}
+
+section#ultimo .container h2 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+section#ultimo .container button {
+  background-color: #FD9C29;
+  color: white;
+  border: none;
+  width: 150px;
+  padding: 13px 10px;
+  border-radius: 100px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+
+/*------------------------------ RODAPÉ ------------------------------*/
+
+footer {
+  padding: 30px 0px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
