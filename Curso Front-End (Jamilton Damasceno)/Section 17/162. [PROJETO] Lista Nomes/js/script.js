@@ -1,8 +1,3 @@
-let form = window.document.getElementsByTagName('form')[0]
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-})
-
 let texto = window.document.getElementById('nome-usuario')
 
 const nomes = [
@@ -14,7 +9,7 @@ const nomes = [
   'pedro',
   'marcela',
   'carla',
-  'joão'
+  'carlos'
 ]
 
 function carregou() {

@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*------------------------------ CABEÇALHO ------------------------------*/
+
+.container {
+  max-width: 1216px;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  margin-left: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-grow: 1;
+}
+
+header ul li a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #3e3e3e;
+}
+
+header ul li a:hover {
+  color: #1943ef;
+}
+
+#botao {
+  display: flex;
+  justify-content: space-between;
+}
+
+#botao a {
+  margin-left: 15px;
+  color: #1943ef;
+  text-decoration: none;
+  border: 2px solid #1943ef;
+  border-radius: 100px;
+  padding: 5px 15px;
+}
+
+#botao a:hover {
+  background-color: rgba(25, 68, 239, 0.3);
+}
+
+#botao a:active {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+#botao .destaque {
+  background-color: #1943ef;
+  color: white;
+}
+
+#botao .destaque:hover {
+  background-color: #153bd1;
+}
+
+#botao .destaque:active {
+  background-color: black;
+  border: 2px solid black;
+}
+
+
+/*------------------------------ SEÇÃO ------------------------------*/
+
+section .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  'texto-principal imagem-principal'
+  'imagem-secundaria texto-secundario';
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+#text-top {grid-area: texto-principal;}
+#text-top h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.destaque-titulo {
+  color: #1943ef;
+}
+
+#text-top p {
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+
+#text-top a {
+  color: #1943ef;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 100px;
+}
+
+#text-top a:hover {
+  color: #0d2892;
+}
+
+#text-top a:active {
+  color: black;
+}
+
+#text-top a.destaque {
+  background-color: #1943ef;
+  color: white;
+}
+
+#text-top a.destaque:hover {
+  background-color: #0d2892;
+  color: white;
+}
+
+#text-top a.destaque:active {
+  background-color: black;
+}
+
+#image-top {grid-area: imagem-principal;}
+#image-top img {width: 100%;}
+
+#text-bottom {grid-area: texto-secundario;}
+#text-bottom h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#text-bottom p {
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+
+#text-bottom a {
+  background-color:  lightseagreen;
+  color: #0d2892;
+  padding: 8px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+#text-bottom a:hover {
+  color: white;
+}
+
+#text-bottom a:active {
+  background-color: white;
+  color: lightseagreen;
+}
+
+
+#image-bottom {grid-area: imagem-secundaria;}
+#image-bottom img {width: 100%;}
+
+
+/*------------------------------ RODAPÉ ------------------------------*/
+
+footer {
+  background-color: #1943ef;
+  text-align: center;
+  padding: 20px 0 50px 0;
+}
+
+footer h3 {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+footer a {
+  background-color: white;
+  color: #1943ef;
+  padding: 8px 25px;
+  margin: 0 5px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: black;
+}
+
+footer a:active {
+  background-color: black;
+  color: white;
+}
+
+footer a.destaque {
+  background-color: lightseagreen;
+}
+
+footer a.destaque:hover {
+  color: white;
+}
+
+footer a.destaque:active {
+  background-color: black;
+}
+
+
+/*------------------------------ TELAS MENORES ------------------------------*/
+
+@media (max-width: 1162px) {
+  header ul {
+    margin-left: 10px;
+  }
+
+  header ul li a {
+    margin-right: 20px;
+  }
+
+  #botao a {
+    margin-left: 5px;
+    color: #1943ef;
+    text-decoration: none;
+    border: 2px solid #1943ef;
+    border-radius: 100px;
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 1122px) {
+  header ul li a {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1102px) {
+  header ul li a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1082px) {
+  header ul li a {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 1062px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header ul {
+    margin: 10px 0;
+  }
+
+  header ul li a {
+    margin-right: 20px;
+  }
+
+  section .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'texto-principal'
+    'imagem-principal'
+    'texto-secundario'
+    'imagem-secundaria';
+    text-align: center;
+    row-gap: 30px;
+  }
+
+  #image-top img {width: 70%;}
+  #image-bottom img {width: 70%;}
+}
+
+@media (max-width: 600px) {
+  #botao {
+    flex-direction: column;
+  }
+
+  #botao a {
+    text-align: center;
+    margin: 5px;
+  }
+
+  #image-top img {width: 100%;}
+  #image-bottom img {width: 100%;}
+}
