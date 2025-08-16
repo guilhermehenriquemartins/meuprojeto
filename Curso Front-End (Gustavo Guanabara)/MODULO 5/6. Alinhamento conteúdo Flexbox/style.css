@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#container {
+  background-color: lightsalmon;
+  display: flex;
+  align-content: space-around;
+  flex-flow: row wrap;
+  width: 110px;
+  height: 300px;
+}
+
+.filho {
+  background-color: lightblue;
+  padding: 20px;
+  border: 1px dotted darkblue;
+}
