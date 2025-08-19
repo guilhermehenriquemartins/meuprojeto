@@ -1,0 +1,1 @@
+//Prototype está presente em versões anteriores do JavaScript, e ao utilizar classes já estamos trabalhando com esse conceito de prototype, só que classes é uma maneira mais nova de trabalharmos com protótipos.
