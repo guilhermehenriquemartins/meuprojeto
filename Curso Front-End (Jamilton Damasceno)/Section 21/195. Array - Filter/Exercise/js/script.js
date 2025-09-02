@@ -1,5 +1,3 @@
-let texto = window.document.getElementById("nome-carro")
-
 const carros = [
   {nome: "Gol", marca: "volkswagen"},
   {nome: "ix35", marca: "hyundai"},
@@ -15,10 +13,30 @@ const carros = [
 
 function carregou() {
   let carrosLista = ''
+  const nomesVeiculos = carros.map(item => { return `<strong>Veículo:</strong> ${item.nome} <br> Montadora: ${(item.marca).charAt(0).toUpperCase() + (item.marca).slice(1)}` })
 
-  for(indice in carros) {
-    carrosLista += `<li>${carros.nome}</li>`
-    console.log(carros.nome)
+  for(indice in nomesVeiculos) {
+    carrosLista += `<li> ${nomesVeiculos[indice]} </li>`
+  }
+
+  document.getElementsByTagName("ul")[0].innerHTML = carrosLista
+}
+
+function pesquisou() {
+  let texto = window.document.getElementById("nome-carro").value
+  let carrosLista = ''
+  function funcao(item) {
+    return item.marca == pesquisa.filtro || item.nome == pesquisa.filtro
+  }
+
+  const pesquisa = {
+    filtro: texto
+  }
+
+  const lista = carros.filter(funcao, pesquisa)
+  const textoVeiculos = lista.map(item => {return `<strong>Veículo:</strong> ${item.nome} <br> Montadora: ${(item.marca).charAt(0).toUpperCase() + (item.marca).slice(1)}`})
+  for (indice in textoVeiculos) {
+    carrosLista += `<li>${textoVeiculos[indice]}</li>`
   }
 
   document.getElementsByTagName("ul")[0].innerHTML = carrosLista
