@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1. Nível Básico - Mudança de Imagem</title>
+</head>
+<body>
+  <img src="imgs/pexels-erhan-ustunbas-558333485-33814464.jpg" alt="Images" width="500"> <br>
+  <button onclick="Mudou()">Mudar Imagem</button>
+
+  <script>
+
+    let img = document.querySelector('img')
+    let botao = document.querySelector('button')
+    const imgs = 
+    ['imgs/pexels-erhan-ustunbas-558333485-33814464.jpg',
+     'imgs/pexels-gabin-cobret-430175667-32948735.jpg',
+     'imgs/pexels-mikhaelmayim-30374294.jpg',
+     'imgs/pexels-nikitapishchugin-31659567.jpg',
+     'imgs/pexels-selo-2150737293-33679890.jpg'
+    ]
+
+    function Mudou() {
+      let padrao = Math.floor(Math.random() * (imgs.length - 1))
+
+      img.src = imgs[padrao]
+    }
+
+  </script>
+</body>
+</html>
