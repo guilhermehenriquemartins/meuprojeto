@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos personalizados</title>
+</head>
+<body>
+
+  <!--<span id="itens" quantidade="2" data-status="pendente" width="200">
+    2 itens no carrinho
+  </span>-->
+
+  <label id="labelNome" for="nome">Nome: </label>
+  <input type="text" id="nome">
+
+  <script>
+
+    const obj = document.querySelector('label')
+    console.log(obj.htmlFor)
+
+  </script>
+
+</body>
+</html>
