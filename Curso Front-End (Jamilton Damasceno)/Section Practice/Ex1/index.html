@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <section>
+    <div></div>
+  </section>
+
+  <button onclick="mudar()">Clique aqui</button>
+
+  <script>
+    const imagens = ['imagem1', 'imagem2', 'imagem3', 'imagem4', 'imagem5']
+    
+    function mudar() {
+      let numeroAleatorio = Math.floor(Math.random() * 5)
+      const obj = document.querySelector('div')
+      obj.className = imagens[numeroAleatorio]
+    }
+  </script>
+  
+</body>
+</html>
