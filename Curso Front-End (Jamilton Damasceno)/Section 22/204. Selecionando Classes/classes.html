@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Selecionando classes</title>
+</head>
+<body>
+
+  <span>Guilherme Henrique</span>
+
+  <button onclick="executar()">Clique aqui</button>
+  
+  <script>
+
+    function executar() {
+      const obj = document.querySelector('span')
+      const classes = obj.classList
+      /*if (classes.contains('vermelho')) {
+        classes.toggle('laranja')
+        classes.remove('vermelho')
+        classes.add('laranja')
+      } else {
+        classes.remove('laranja')
+        classes.add('vermelho')
+      }*/
+
+      classes.add('vermelho', 'texto')
+      classes.toggle('laranja')
+
+    }
+
+  </script>
+
+</body>
+</html>
