@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  margin-top: 40px;
+  background-color: black;
+  height: 400px;
+}
+
+.banner1 {
+  background: transparent url("imgs/1.jpg") no-repeat center center / cover;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.banner2 {
+  background: transparent url("imgs/2.jpg") no-repeat center center / cover;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.banner3 {
+  background: transparent url("imgs/3.jpg") no-repeat center center / cover; 
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.banner4 {
+  background: transparent url("imgs/4.jpg") no-repeat center center / cover;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.banner5{
+  background: transparent url("imgs/5.jpg") no-repeat center center / cover;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
