@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <!--<div id="conteudo">conteudo</div>-->
+
+  <ul id="itens">
+    <li>Pedro</li>
+    <li>Ana</li>
+  </ul>
+
+  <hr>
+
+  <p id="item-clonar">Tamires</p>
+
+  <button onclick="adicionar()">adicionar</button>
+  <button onclick="remover()">remover</button>
+
+  <script>
+
+    /*const obj = document.getElementById('conteudo')
+    //obj.textContent = "Guilherme"
+    obj.innerHTML = "<strong>Guilherme</strong>"*/
+    const ul = document.getElementById('itens')
+    const li = document.createElement('li')
+
+    function adicionar() {
+      li.textContent = 'Guilherme'
+      ul.insertBefore(li, ul.children[0])
+
+      const itemClonar = document.getElementById('item-clonar')
+      const item = itemClonar.cloneNode(true)
+
+      ul.appendChild(item)
+    }
+
+    function remover() {
+      ul.removeChild(li)
+    }
+
+  </script>
+
+</body>
+</html>
