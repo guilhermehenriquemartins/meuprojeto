@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+div#pai {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+input[type='number'] {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  padding: 5px 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+div#res {
+  background-color: lightblue;
+}
+
+div#res {
+  font-weight: bold;
+  padding: 15px 20px;
+  color: midnightblue;
+}
