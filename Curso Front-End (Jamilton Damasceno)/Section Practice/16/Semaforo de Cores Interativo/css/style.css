@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#semaforo {
+  margin: auto;
+  margin-top: 20px;
+  background-color: black;
+  border: 10px solid gray;
+  width: 200px;
+  height: 350px;
+}
+
+.desligado1, .desligado2, .desligado3 {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border-top: 5px solid #363636;
+  background-color: black;
+}
+
+.vermelho {
+  background-color: red;
+  box-shadow: 0px 0px 50px red;
+}
+
+.amarelo {
+  background-color: yellow;
+  box-shadow: 0px 0px 50px yellow;
+}
+
+.verde {
+  background-color: green;
+  box-shadow: 0px 0px 50px green;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
