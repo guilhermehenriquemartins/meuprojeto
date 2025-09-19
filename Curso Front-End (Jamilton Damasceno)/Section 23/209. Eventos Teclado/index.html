@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos Teclado</title>
+</head>
+<body>
+
+  <input type="text" id="entrada">
+
+  <script>
+
+    function executar() {
+      console.log("Executar")
+    }
+
+    const obj = document.querySelector('#entrada')
+    obj.addEventListener('keypress', executar)
+
+  </script>
+  
+</body>
+</html>
