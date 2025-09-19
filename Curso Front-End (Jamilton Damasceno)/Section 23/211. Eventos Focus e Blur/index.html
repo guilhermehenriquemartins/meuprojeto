@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos Focus e Blur</title>
+</head>
+<body>
+  
+  <input type="text" id="barra">
+
+  <script>
+
+    function executar() {
+      console.log('Foco!!')
+    }
+
+
+    function executar2() {
+      console.log('Tirou o Foco...')
+    }
+
+    const pesquisa = document.getElementById('barra')
+    
+    pesquisa.addEventListener('focus', executar)
+    pesquisa.addEventListener('blur', executar2)
+
+  </script>
+
+</body>
+</html>
