@@ -1,46 +1,53 @@
 @charset "UTF-8";
 
 * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-size: 1em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-div#pai {
-  width: 600px;
-  margin: auto;
-  margin-top: 20px;
+section {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  padding: 10px 20px;
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 2em;
+.campo {
+  margin: 10px auto;
 }
 
 input[type='number'] {
   width: 100%;
   margin-top: 5px;
-  margin-bottom: 10px;
+  height: 30px;
   padding: 5px;
-}
-
-button {
-  background-color: midnightblue;
-  color: white;
   border: none;
-  padding: 5px 50px;
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;
+  box-shadow: 0px 0px 1px black;
 }
 
-div#res {
-  background-color: lightblue;
+input[type='number']:focus-within {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #0099ff
 }
 
-div#res {
+#resultado {
+  background-color: #0099ff;
+  color: #002d4b;
   font-weight: bold;
   padding: 15px 20px;
-  color: midnightblue;
+  margin-top: 15px;
+}
+
+input[type='submit'] {
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: #002d4b;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
 }

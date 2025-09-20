@@ -7,23 +7,22 @@
   <title>Alcool ou Gasolina</title>
 </head>
 <body onload="carregou()">
-
-  <div id="pai">
-    <h1>É melhor utilizar Álcool ou Gasolina?</h1>
-    <div>
+  <section>
+    <h1>É melhor utilizar Álcool ou Gasolina</h1>
+    <div class="campo">
       <label for="alcool">Preço do Álcool</label> <br>
-      <input type="number" name="preco-alcool" id="valorAlcool" step="0.1">
+      <input type="number" name="preco-alcool" id="alcool">
     </div>
-    <div>
-      <label for="gasolina">Preço da Gasolina</label> <br>
-      <input type="number" name="preco-gasolina" id="valorGasolina" step="0.1">
-    </div>
-    <div id="res">
-      Resultado
-    </div>
-    <button botao-calcular>Calcular</button>
-  </div>
 
+    <div class="campo">
+      <label for="gasolina">Preço da Gasolina</label> <br>
+      <input type="number" name="preco-gasolina" id="gasolina">
+    </div>
+
+    <div id="resultado">Resultado</div>
+
+    <input type="submit" value="Calcular">
+  </section>
   <script src="js/script.js"></script>
 </body>
 </html>
