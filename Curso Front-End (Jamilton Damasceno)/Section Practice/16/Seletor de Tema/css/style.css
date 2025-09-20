@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+select {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 0px;
+  width: 160px;
+}
+
+
+
+.light-mode {
+  background-color: #c4e4f9;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #eee;
+}
+
+.sepia-mode {
+  background-color: #f4e8c1;
+  color: #5b4636;
+}
